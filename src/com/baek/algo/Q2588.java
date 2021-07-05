@@ -3,6 +3,7 @@ package com.baek.algo;
 import java.util.Scanner;
 
 public class Q2588 {
+
 	public static void main(String[] args) {
 		/*
 		 * (세 자리 수) × (세 자리 수)는 다음과 같은 과정을 통하여 이루어진다.
