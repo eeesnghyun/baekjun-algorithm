@@ -16,7 +16,7 @@ public class Q2588 {
 		 *  3776  - (4)
 		 * 1416   - (5)
 		 * ------
-		 * 181720
+		 * 181720 - (6)
 		 */
 		Scanner sc = new Scanner(System.in);
 
