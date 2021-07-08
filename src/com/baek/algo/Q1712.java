@@ -31,12 +31,14 @@ public class Q1712 {
 		int c = Integer.parseInt(st.nextToken());
 		int point = 1;
 
-		// 1. a + (b * i) < c * i
-		// 2. a/i + b < c
-		// 3. a/i < c - b
-		// 4. a < (c - b) * i
-		// 5. (170 - 70) * i = 1000
-		// 6. i = 10
+		/*
+		 * 1. a + (b * i) < c * i
+		 * 2. a/i + b < c
+		 * 3. a/i < c - b
+		 * 4. a < (c - b) * i
+		 * 5. (170 - 70) * i = 1000
+		 * 6. i = 10
+		 */
 
 		// 가변 비용이 판매 가격보다 높거나 같다면 손익분기점이 존재하지 않음
 		if(b >= c) {
