@@ -30,7 +30,7 @@ public class Q2839 {
 				break;
 			}
 
-			n = n - 3;
+			n  = n - 3;
 			k3 = k3 + 1;
 
 			if(n < 0) {
