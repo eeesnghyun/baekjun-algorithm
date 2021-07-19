@@ -21,11 +21,13 @@ public class Q2839 {
 
 		int n  = sc.nextInt();
 		int k3 = 0;
-		int k5 = n / 5;
+		int k5 = 0;
 		int result = 0;
 
 		while(true) {
 			if(n % 5 == 0) {
+				k5 = n / 5;
+
 				result = k3 + k5;
 				break;
 			}

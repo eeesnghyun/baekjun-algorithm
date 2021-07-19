@@ -16,40 +16,41 @@ public class Q4948 {
 		 *
 		 * 조건
 		 * - 각 테스트 케이스에 대해서 n보다 크고 2n보다 작거나 같은 소수의 개수를 출력한다.
+		 * - 1 ≤ n ≤ 123456
 		 */
 		Scanner sc = new Scanner(System.in);
 
+		boolean arr[] = new boolean[246913];
+
 		while(true) {
 			int n = sc.nextInt();
+			int cnt = 0;
 
 			if(n == 0) {
 				break;
 			} else {
-				// 시간 초과
-				// 힌트 : 에라토스테네스의 체
-				// 120보다 작거나 같은 수 가운데 2,3,5,7의 배수를 지우고 남는 수는 모두 소수이다.
-				int min = n + 1;
 				int max = n * 2;
-				int cnt = 0;
 
-				for(int i = min; i <= max; i++) {
-					boolean pNum = true;
+				// 에라토스테네스의 체
+				for(int i = 2; i <= max; i++) {
+					arr[i] = true;
+				}
 
-					if(i > 1) {
-						if(i % 2 != 0) {
-							for(int j = 2; j < i; j++) {
-								if(i % j == 0) {
-									pNum = false;
-									break;
-								}
-							}
-
-							if(pNum == true) {
-								cnt = cnt + 1;
-							}
+				for(int i = 2; i <= max; i++) {
+					for(int j = i * 2; j <= max; j = j + i) {
+						if(arr[j] == true) {
+							arr[j] = false;
 						}
 					}
 				}
+
+				// n보다 크고 2n보다 작은 소수의 개수
+				for(int k = n + 1; k <= max; k++) {
+					if(arr[k] == true) {
+						cnt = cnt + 1;
+					}
+				}
+
 				System.out.println(cnt);
 			}
 		}

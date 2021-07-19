@@ -15,7 +15,7 @@ public class Q10757 {
 		 * - 첫째 줄에 A와 B가 주어진다.
 		 *
 		 * 조건
-		 * - 0 < A,B < 1010000
+		 * - 0 < A,B < 10의 10000승
 		 */
 		BufferedReader bf  = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(bf.readLine(), " ");
