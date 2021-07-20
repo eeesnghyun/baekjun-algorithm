@@ -1,4 +1,4 @@
-package com.baek.algo;
+package com.baek.algo.step05;
 
 import java.io.BufferedReader;
 import java.io.IOException;

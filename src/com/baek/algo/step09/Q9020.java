@@ -1,4 +1,4 @@
-package com.baek.algo;
+package com.baek.algo.step09;
 
 import java.util.Scanner;
 
