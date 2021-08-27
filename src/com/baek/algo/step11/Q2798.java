@@ -49,17 +49,18 @@ public class Q2798 {
 		for(int i = 0; i < n - 2; i++) {
 			for(int j = i + 1; j < n - 1; j++) {
 				for(int h = j + 1; h < n; h++) {
-					// 3 9 5 : 17
-					// 3 9 8 : 20
+					// 3 9 5  : 17
+					// 3 9 8  : 20
 					// 3 9 12 : 24
-					// 3 5 8 : 16
+					// 3 5 8  : 16
 					// 3 5 12 : 20
 					// 3 8 12 : 23
-					// 9 5 8 : 22
+					// 9 5 8  : 22
+					// 9 5 12 : 26
 					// 9 8 12 : 29
 					// 5 8 12 : 25
 					sum = card[i] + card[j] + card[h];
-					System.out.println(sum);
+
 					if(sum <= m && sum >= min) {
 						min = sum;
 						result = sum;
