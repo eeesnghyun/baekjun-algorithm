@@ -1,6 +1,5 @@
 package com.baek.algo.step12;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Q2750 {
